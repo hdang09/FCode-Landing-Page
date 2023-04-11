@@ -6,12 +6,7 @@ Here is [the website](https://f-code.tech/) for the F-Code Landing Page.
 
 ## Screenshot
 
-<div align="center">
-    <video width="640" height="480" autoplay>
-        <source src="./.github/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
+https://user-images.githubusercontent.com/96512007/231200944-65901d2c-eb53-47fa-a9d1-e02f738ed15b.mp4
 
 ## Technology
 
