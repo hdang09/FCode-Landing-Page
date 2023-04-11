@@ -1,4 +1,4 @@
-# Hotel Management
+# F-Code Landing Page
 
 ## Description
 
