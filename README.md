@@ -2,6 +2,7 @@
 
 ## Description
 
+This is a project for recuiting members and introducing F-Code Club at FPT University.
 Here is [the website](https://f-code.tech/) for the F-Code Landing Page.
 
 ## Screenshot
