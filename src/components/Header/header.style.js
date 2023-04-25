@@ -1,4 +1,4 @@
-import { NavLink, Link } from 'react-router-dom';
+import Link from 'next/link';
 import { down } from 'styled-breakpoints';
 import styled from 'styled-components';
 
@@ -92,7 +92,7 @@ export const NavContainer = styled.div`
     }
 `;
 
-export const NavLinkStyle = styled(NavLink)`
+export const NavLinkStyle = styled(Link)`
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 8px;

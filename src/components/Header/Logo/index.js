@@ -1,16 +1,16 @@
-import { NavLink } from 'react-router-dom';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { ReactComponent as FCodeLogo } from '../../../assets/logo.svg';
 import { StyledLogo, LText } from './logo.style';
 
 const Logo = () => {
     return (
-        <NavLink to="/">
+        <Link href="/">
             <StyledLogo>
-                <FCodeLogo width={70} height={70} />
+                <Image src="/images/logo.svg" width={70} height={70} />
                 <LText>F-Code</LText>
             </StyledLogo>
-        </NavLink>
+        </Link>
     );
 };
 

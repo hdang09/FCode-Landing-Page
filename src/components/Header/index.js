@@ -1,6 +1,6 @@
-import { useRef, useState, useEffect, useContext } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
 
 import Burger from './Burger';
 import FillGround from './FillGround';
@@ -17,7 +17,7 @@ import {
 } from './header.style';
 import { useOnClickOutside } from './hooks';
 
-const Headernew = () => {
+const Header = () => {
     let [open, setOpen] = useState(false);
     const [navClassList, setNavClassList] = useState([]);
     const scroll = useScrollListener();
@@ -38,17 +38,17 @@ const Headernew = () => {
         <Container>
             <StyledHeader ref={menu} className={navClassList.join(' ')}>
                 <NavContainer>
-                    <Logo></Logo>
+                    <Logo />
 
                     <RightNav>
                         <ul>
-                            <NavLinkStyle to="/" end>
+                            <NavLinkStyle href="/" end>
                                 Home
                             </NavLinkStyle>
-                            <NavLinkStyle to="/activities">Activites</NavLinkStyle>
-                            <NavLinkStyle to="/timeline">Timeline</NavLinkStyle>
-                            <NavLinkStyle to="/faq">FAQ</NavLinkStyle>
-                            <ButtonHeader to="/signup">Sign Up</ButtonHeader>
+                            <NavLinkStyle href="/activities">Activites</NavLinkStyle>
+                            <NavLinkStyle href="/timeline">Timeline</NavLinkStyle>
+                            <NavLinkStyle href="/faq">FAQ</NavLinkStyle>
+                            <ButtonHeader href="/signup">Sign Up</ButtonHeader>
                         </ul>
                     </RightNav>
                 </NavContainer>
@@ -60,4 +60,4 @@ const Headernew = () => {
     );
 };
 
-export default Headernew;
+export default Header;

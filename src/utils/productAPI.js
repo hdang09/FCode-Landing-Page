@@ -1,4 +1,4 @@
-import { post, get, put } from './ApiCaller';
+import { post, get } from './ApiCaller';
 
 export const getStep = () => {
     const url = `/auth/getStep`;

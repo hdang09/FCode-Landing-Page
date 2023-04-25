@@ -26,3 +26,6 @@ yarn.lock
 
 # history
 .history
+.next
+ssrHelper
+server.js
